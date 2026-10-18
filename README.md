@@ -69,9 +69,23 @@
 
 ### 插件市场（推荐）
 
-DSH 的插件目录来自 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)。在 **设置 → 插件市场** 搜索「信息记录」或 `dsh-info-records` 即可安装；尚未上架时可用下面的 npm 方式。
+DSH 的插件目录来自 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)。本插件已提交 [PR #7950](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/7950)，合并后可在 **设置 → 插件市场** 搜索「信息记录」或 `dsh-info-records` 安装。合并前可直接用下面的 GitHub 方式。
+
+### GitHub（当前可用）
+
+```sh
+dsh plugin --profile web add github:xiezouqu12/dsh-info-records
+```
+
+或安装 v1.0.0 的预打包 tarball：
+
+```sh
+dsh plugin --profile web add "https://github.com/xiezouqu12/dsh-info-records/releases/download/v1.0.0/dsh-info-records-1.0.0.tgz"
+```
 
 ### npm
+
+npm 包 `dsh-info-records` 发布后可用：
 
 ```sh
 dsh plugin --profile web add dsh-info-records
