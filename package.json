@@ -1,0 +1,60 @@
+{
+  "name": "dsh-info-records",
+  "version": "1.0.0",
+  "description": "Encrypted local credential vault for DeepSeek Harness: keep website and app logins, let the agent look them up before sign-in, and opt in to capturing new credentials from chat.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Info Records contributors",
+  "icon": "icon.svg",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "credentials",
+    "password-manager",
+    "vault",
+    "security",
+    "agent"
+  ],
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "vault.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "docs/screenshots/*"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible"
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
