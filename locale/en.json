@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Info Records",
+    "description": "An encrypted local vault for website and app logins: the agent looks them up by site before signing in, records can be manual-only, and chat capture is opt-in."
+  }
+}
